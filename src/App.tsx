@@ -1,9 +1,20 @@
 import React from "react";
 
+import NavBar from "./components/NavBar";
+import About from "./components/About";
+import Section from "./components/Section";
+import Technologies from "./components/Technologies";
+
 function App() {
   return (
     <div className="min-h-screen">
-      <h1 className="text-center">BrilhanTI</h1>
+      <NavBar />
+      <Section level="about">
+        <About />
+      </Section>
+      <Section level="technologies">
+        <Technologies />
+      </Section>
     </div>
   );
 }
