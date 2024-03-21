@@ -17,18 +17,18 @@ const Technologies: React.FC = () => {
             md:text-4xl
             lg:text-5xl
             xl:text-5xl
-            2xl:text-6xl
-            3xl:text-6xl
-            4xl:text-8xl
+            2xl:text-5xl
+            3xl:text-5xl
+            4xl:text-6xl
             font-bold
             leading-tight"
           >
             Tecnologias
           </span>
-          <p className="w-3/3 mt-4 text-lg md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl 4xl:text-[44px]">
+          <p className="w-3/3 mt-4 text-lg md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl 4xl:text-[38px]">
             Somos especialistas em desenvolvimentos de sites para sua empresa.
           </p>
-          <p className="w-3/3 mt-2 text-lg md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl 4xl:text-[44px]">
+          <p className="w-3/3 mt-2 text-lg md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl 4xl:text-[38px]">
             Entrega rápido e com a melhor qualidade.
           </p>
         </div>
@@ -42,7 +42,7 @@ const Technologies: React.FC = () => {
               className="w-full h-full object-center object-cover group-hover:opacity-75"
             />
           </div>
-          <h3 className="mt-4 text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-xl 2xl:text-4xl 4xl:text-5xl font-medium text-gray-700">
+          <h3 className="mt-4 text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-xl 2xl:text-4xl 4xl:text-4xl font-medium text-gray-700">
             Agilidade
           </h3>
           <p className="mt-2 lg:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl">
@@ -59,7 +59,7 @@ const Technologies: React.FC = () => {
               className="w-full h-full object-center object-cover group-hover:opacity-75"
             />
           </div>
-          <h3 className="mt-4 text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl 4xl:text-5xl font-medium text-gray-700">
+          <h3 className="mt-4 text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl 4xl:text-4xl font-medium text-gray-700">
             Qualidade
           </h3>
           <p className="mt-2 lg:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl">
@@ -76,10 +76,10 @@ const Technologies: React.FC = () => {
               className="w-full object-center object-cover group-hover:opacity-75"
             />
           </div>
-          <h3 className="mt-4 text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-xl 2xl:text-4xl 4xl:text-5xl font-medium text-gray-700">
+          <h3 className="mt-4 text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-xl 2xl:text-4xl 4xl:text-4xl font-medium text-gray-700">
             Criatividade
           </h3>
-          <p className="mt-2 lg:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-4xl">
+          <p className="mt-2 lg:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl">
             Sites criativos com melhores tecnicas de design para fazer você
             decolar sua empresa.
           </p>

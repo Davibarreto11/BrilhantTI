@@ -66,7 +66,7 @@ const NavBar: React.FC = () => {
           >
             <li>
               <a
-                className="block py-2 text-white md:p-4 lg:text-xl 2xl:text-3xl 3xl:text-3xl 4xl:text-4xl"
+                className="block py-2 text-white md:p-4 lg:text-xl 2xl:text-3xl 3xl:text-3xl"
                 href="#about"
               >
                 Sobre
@@ -74,7 +74,7 @@ const NavBar: React.FC = () => {
             </li>
             <li>
               <a
-                className="block py-2 text-white hover:text-red-400 md:p-4 lg:text-xl 2xl:text-3xl 3xl:text-3xl 4xl:text-4xl"
+                className="block py-2 text-white hover:text-red-400 md:p-4 lg:text-xl 2xl:text-3xl 3xl:text-3xl"
                 href="#responsabilities"
               >
                 O que fazemos
@@ -82,7 +82,7 @@ const NavBar: React.FC = () => {
             </li>
             <li>
               <a
-                className="block py-2 text-white md:p-4 lg:text-xl 2xl:text-3xl 3xl:text-3xl 4xl:text-4xl"
+                className="block py-2 text-white md:p-4 lg:text-xl 2xl:text-3xl 3xl:text-3xl"
                 href="#contacts"
               >
                 Serviços
@@ -90,7 +90,7 @@ const NavBar: React.FC = () => {
             </li>
             <li>
               <a
-                className="block py-2 text-white font-bold md:p-4 lg:text-xl 2xl:text-3xl 3xl:text-3xl 4xl:text-4xl"
+                className="block py-2 text-white font-bold md:p-4 lg:text-xl 2xl:text-3xl 3xl:text-3xl"
                 href="mailto:gabrielferreira019@gmail.com"
               >
                 Peça um orçamento
