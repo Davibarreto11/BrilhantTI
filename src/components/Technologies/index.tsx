@@ -11,7 +11,7 @@ const Technologies: React.FC = () => {
         <div className="flex flex-col items-center">
           <span
             className="
-            mt-4
+            mt-12
             text-3xl
             sm:text-3xl
             md:text-4xl
@@ -34,7 +34,7 @@ const Technologies: React.FC = () => {
         </div>
       </div>
       <div className="w-full mx-auto px-4 sm:py-12 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center md:items-start">
-        <div className="group text-center flex flex-col items-center justify-center w-48 md:w-96 lxl:w-72 2xl:w-96 3xl:w-1/4">
+        <div className="group text-center flex flex-col items-center justify-center w-48 md:w-96 xl:w-72 2xl:w-96 3xl:w-1/4">
           <div className="mt-6 aspect-w-1 aspect-h-1 rounded-lg overflow-hidden xl:aspect-w-8 xl:aspect-h-8 w-full">
             <img
               src={SuperHero}

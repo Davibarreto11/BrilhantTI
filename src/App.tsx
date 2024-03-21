@@ -4,6 +4,7 @@ import NavBar from "./components/NavBar";
 import About from "./components/About";
 import Section from "./components/Section";
 import Technologies from "./components/Technologies";
+import Service from "./components/Service";
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
       </Section>
       <Section level="technologies">
         <Technologies />
+      </Section>
+      <Section level="services">
+        <Service />
       </Section>
     </div>
   );
