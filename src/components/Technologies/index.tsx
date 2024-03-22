@@ -79,7 +79,7 @@ const Technologies: React.FC = () => {
           <h3 className="mt-4 text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-xl 2xl:text-4xl 4xl:text-4xl font-medium text-gray-700">
             Criatividade
           </h3>
-          <p className="mt-2 lg:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl">
+          <p className="mt-2 mb-6 lg:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl">
             Sites criativos com melhores tecnicas de design para fazer você
             decolar sua empresa.
           </p>

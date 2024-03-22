@@ -10,7 +10,7 @@ const Section: React.FC<SectionProps> = ({ children, level }) => {
     <div
       id={level}
       className={`flex justify-center ${
-        level === ("technologies" || "contacts") ? "bg-white" : ""
+        level === "technologies" || level === "contacts" ? "bg-white" : ""
       }`}
       style={{ minHeight: "100vh" }}
     >
