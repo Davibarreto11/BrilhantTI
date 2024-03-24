@@ -9,7 +9,7 @@ const Technologies: React.FC = () => {
     <div className="w-full flex flex-col justify-evenly items-center">
       <div className="flex flex-col justify-center">
         <div className="flex flex-col items-center">
-          <span
+          <h2
             className="
             mt-12
             text-3xl
@@ -24,7 +24,7 @@ const Technologies: React.FC = () => {
             leading-tight"
           >
             Tecnologias
-          </span>
+          </h2>
           <p className="w-3/3 mt-4 text-lg md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl 4xl:text-[38px]">
             Somos especialistas em desenvolvimentos de sites para sua empresa.
           </p>

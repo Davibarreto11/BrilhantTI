@@ -1,14 +1,18 @@
 import React from "react";
+import { IconBaseProps } from "react-icons";
 
 interface ButtonProps {
   label: string;
+  icon?: React.ComponentType<IconBaseProps>;
 }
 
-const Button: React.FC<ButtonProps> = ({ label }) => {
+const Button: React.FC<ButtonProps> = ({ label, icon: Icon }) => {
   return (
     <a
       href="mailto:gabrielferreira019@gmail.com"
       className="
+      flex
+      items-center
       bg-primaryGray 
       px-4 
       py-2 
@@ -18,13 +22,13 @@ const Button: React.FC<ButtonProps> = ({ label }) => {
       2xl:py-4 
       3xl:py-5
       3xl:px-12
-      4xl:px-14 
-      4xl:py-7 
+      4xl:px-12
+      4xl:py-6
       text-base 
       md:text-lg 
       2xl:text-xl 
       3xl:text-2xl
-      4xl:text-3xl 
+      4xl:text-2xl 
       text-white
       rounded-3xl 
       font-semibold
@@ -36,6 +40,7 @@ const Button: React.FC<ButtonProps> = ({ label }) => {
       duration-300
       "
     >
+      {Icon && <Icon size={30} className="mr-4" />}
       <h1>{label}</h1>
     </a>
   );
