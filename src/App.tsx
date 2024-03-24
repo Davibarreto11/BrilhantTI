@@ -6,6 +6,7 @@ import Section from "./components/Section";
 import Technologies from "./components/Technologies";
 import Service from "./components/Service";
 import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Section level="contacts">
         <Contact />
       </Section>
+      <Footer />
     </div>
   );
 }
