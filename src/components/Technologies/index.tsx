@@ -27,7 +27,7 @@ const Technologies: React.FC = () => {
 
   useEffect(() => {
     setName(state[index])
-  }, [index,state])
+  }, [index, state])
 
   return (
     <div className="w-full flex flex-col justify-evenly items-center">
@@ -50,7 +50,7 @@ const Technologies: React.FC = () => {
             Tecnologias
           </h2>
           <p className="w-3/3 mt-4 text-lg md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl 4xl:text-[38px]">
-            "Somos especialistas em desenvolvimentos de sites para <span className="text-primaryPink font-bold">{name}</span>.
+            Somos especialistas em desenvolvimentos de sites para <span className="text-primaryPink font-bold">{name}</span>.
           </p>
           <p className="w-3/3 mt-2 text-lg md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl 4xl:text-[38px]">
             Entrega rápido e com a melhor qualidade.

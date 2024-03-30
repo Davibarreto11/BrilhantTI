@@ -9,6 +9,7 @@ const Service: React.FC = () => {
         <div className="flex flex-col items-center">
           <h2
             className="
+            mt-12
             text-white
             text-3xl
             sm:text-3xl
