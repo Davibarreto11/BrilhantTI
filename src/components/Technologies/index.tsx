@@ -1,10 +1,34 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 import TeamBro from "../../assets/Creative team-bro.png";
 import HandCondig from "../../assets/Hand coding-bro.png";
 import SuperHero from "../../assets/Superhero-cuate.png";
 
 const Technologies: React.FC = () => {
+  const state = [
+    "seu blog",
+    "sua empresa",
+    "seu negócio",
+    "você",
+    "seu portifólio",
+  ];
+
+  const [index, setIndex] = useState(0);
+  const [name, setName] = useState(state[0]);
+
+  useEffect(() => {
+    const blog = setInterval(() => {
+      // console.log(index)
+      setIndex((prevIndex) => (prevIndex + 1) % state.length);
+    }, 2000);
+
+    return () => clearInterval(blog);
+  }, [index, state.length]);
+
+  useEffect(() => {
+    setName(state[index])
+  }, [index,state])
+
   return (
     <div className="w-full flex flex-col justify-evenly items-center">
       <div className="flex flex-col justify-center">
@@ -26,7 +50,7 @@ const Technologies: React.FC = () => {
             Tecnologias
           </h2>
           <p className="w-3/3 mt-4 text-lg md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl 4xl:text-[38px]">
-            Somos especialistas em desenvolvimentos de sites para sua empresa.
+            "Somos especialistas em desenvolvimentos de sites para <span className="text-primaryPink font-bold">{name}</span>.
           </p>
           <p className="w-3/3 mt-2 text-lg md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl 4xl:text-[38px]">
             Entrega rápido e com a melhor qualidade.
@@ -46,8 +70,8 @@ const Technologies: React.FC = () => {
             Agilidade
           </h3>
           <p className="mt-2 lg:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl">
-            Garantimos os melhores tempos de entrega e de resposta para os nossos
-            clientes.
+            Garantimos os melhores tempos de entrega e de resposta para os
+            nossos clientes.
           </p>
         </div>
 
