@@ -12,9 +12,9 @@ import Button from "../Button";
 
 const Contact: React.FC = () => {
   return (
-    <div className="w-full flex flex-col lg:flex-row justify-between items-center">
-      <div className="3xl:h-full 3xl:w-2/6 flex flex-col 3xl:justify-evenly">
-        <h2 className="md:text-3xl lg:text-4xl 2xl:text-5xl 3xl:text-7xl">
+    <div className="w-full flex flex-col lg:flex-row lg:justify-between items-center justify-center">
+      <div className="md:mt-6 md:items-center lg:items-start 3xl:h-full 3xl:w-2/6 flex flex-col 3xl:justify-evenly">
+        <h2 className="font-bold text-3xl md:text-3xl lg:text-4xl 2xl:text-5xl 3xl:text-7xl">
           Vamos discutir algo
           <span className="text-primaryPink font-bold"> incrível </span>
           juntos!
@@ -22,11 +22,13 @@ const Contact: React.FC = () => {
         <div>
           <div className="flex items-center ml-10 mt-24 3xl:mt-0">
             <FaEnvelope size={30} color={COLORS.pimaryPink} />
-            <p className="ml-2 4xl:text-2xl">laryssa.brilhante@hotmail.com</p>
+            <p className="ml-2 text-xl 4xl:text-2xl">
+              laryssa.brilhante@hotmail.com
+            </p>
           </div>
           <div className="flex items-center mt-2">
             <input
-              className="ml-2 3xl:text-xl bg-primaryPink p-4 pr-36 pl-14 rounded-xl opacity-75"
+              className="ml-2 text-xl 3xl:text-xl bg-primaryPink p-4 pr-28 md:pr-36 pl-14 rounded-xl opacity-75"
               value="+55 (88) 99648-8674"
             />
             <FaPhoneAlt
@@ -36,9 +38,11 @@ const Contact: React.FC = () => {
             />
           </div>
         </div>
-        <div className="flex items-center mt-24">
+        <div className="flex items-center justify-center mt-6 lg:mt-24">
           <a
-            href=""
+            href=" https://wa.me/996488674"
+            target="_blank"
+            rel="noreferrer"
             className="                
               transition 
               ease-in-out 
@@ -50,7 +54,9 @@ const Contact: React.FC = () => {
             <FaWhatsapp size={30} className="mr-5" />
           </a>
           <a
-            href=""
+            href="https://www.linkedin.com/in/laryssa-brilhante-ab15b11b5"
+            target="_blank"
+            rel="noreferrer"
             className="                
               transition 
               ease-in-out 
@@ -62,7 +68,9 @@ const Contact: React.FC = () => {
             <FaLinkedin size={30} className="mr-5" />
           </a>
           <a
-            href=""
+            href="https://www.instagram.com/solilorys/"
+            target="_blank"
+            rel="noreferrer"
             className="                
               transition 
               ease-in-out 
@@ -71,12 +79,12 @@ const Contact: React.FC = () => {
               hover:scale-110
               duration-300"
           >
-            <FaInstagram size={30}/>
+            <FaInstagram size={30} />
           </a>
         </div>
       </div>
-      <div className="md:w-full md:mb-4 lg:w-1/2 xl:w-3/6 2xl:w-3/6 3xl:w-2/6 bg-primaryPink rounded-xl p-8 3xl:h-[650px] 4xl:h-[800px]">
-        <div className="h-full flex flex-col items-start justify-between">
+      <div className="w-4/5 md:w-2/3 md:mb-4 lg:w-1/2 xl:w-3/6 2xl:w-3/6 3xl:w-2/6 bg-primaryPink rounded-xl p-8 3xl:h-[650px] 4xl:h-[800px] mb-6 mt-8 md:mt-8 lg:mt-0">
+        <div className="h-full flex flex-col items-center lg:items-start md:justify-center lg:justify-between">
           <div>
             <span className="md:text-xl lg:text-2xl 3xl:text-4xl text-white">
               Estou interessado(a) em...
@@ -121,19 +129,19 @@ const Contact: React.FC = () => {
               </button>
             </div>
           </div>
-          <div className="w-full h-1/2 flex flex-col items-start justify-evenly mb-28">
+          <div className="lg:w-full h-1/2 flex flex-col items-start justify-evenly mb-28">
             <input
-              className="w-full h-8 bg-primaryPink border-b-2 font-bold text-white text-xl lg:mt-4 xl:mt-6 3xl:mt-0"
+              className="w-full h-8 bg-primaryPink border-b-2 font-bold text-white text-xl mt-8 lg:mt-4 xl:mt-6 3xl:mt-0"
               type="text"
               placeholder="Nome..."
             />
             <input
-              className="w-full h-8 bg-primaryPink border-b-2 font-bold text-white text-xl lg:mt-4 xl:mt-4 3xl:mt-0"
+              className="w-full h-8 bg-primaryPink border-b-2 font-bold text-white text-xl mt-4 lg:mt-4 xl:mt-4 3xl:mt-0"
               type="text"
               placeholder="Email..."
             />
             <input
-              className="w-full h-8 bg-primaryPink border-b-2 font-bold text-white text-xl lg:mt-4 xl:mt-4 3xl:mt-0"
+              className="w-full h-8 bg-primaryPink border-b-2 font-bold text-white text-xl mt-4 lg:mt-4 xl:mt-4 3xl:mt-0"
               type="text"
               placeholder="Mensagem..."
             />

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { COLORS } from "../../styles/theme";
 
 const NavBar: React.FC = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -27,10 +26,10 @@ const NavBar: React.FC = () => {
         lg:py-6
         `}
       >
-        <a className="w-12 md:w-14 lg:w-16 3xl:w-24" href="">
+        <a className="w-12 md:w-14 lg:w-16 3xl:w-24" href="/">
           <img
             className="object-center rounded-2xl"
-            src={require('../../assets/logo.jpg')}
+            src={require("../../assets/logo.jpg")}
             alt=""
           />
         </a>
@@ -69,21 +68,21 @@ const NavBar: React.FC = () => {
                 className="block py-2 text-white md:p-4 lg:text-xl 2xl:text-3xl 3xl:text-3xl"
                 href="#about"
               >
-                Sobre
+                Empresa
               </a>
             </li>
             <li>
               <a
                 className="block py-2 text-white hover:text-red-400 md:p-4 lg:text-xl 2xl:text-3xl 3xl:text-3xl"
-                href="#responsabilities"
+                href="#technologies"
               >
-                O que fazemos
+                Tecnologias
               </a>
             </li>
             <li>
               <a
                 className="block py-2 text-white md:p-4 lg:text-xl 2xl:text-3xl 3xl:text-3xl"
-                href="#contacts"
+                href="#services"
               >
                 Serviços
               </a>
@@ -91,7 +90,7 @@ const NavBar: React.FC = () => {
             <li>
               <a
                 className="block py-2 text-white font-bold md:p-4 lg:text-xl 2xl:text-3xl 3xl:text-3xl"
-                href="mailto:gabrielferreira019@gmail.com"
+                href="#contacts"
               >
                 Peça um orçamento
               </a>

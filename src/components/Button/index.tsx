@@ -9,7 +9,7 @@ interface ButtonProps {
 const Button: React.FC<ButtonProps> = ({ label, icon: Icon }) => {
   return (
     <a
-      href="mailto:gabrielferreira019@gmail.com"
+      href="mailto:laryssa.brilhante@hotmail.com"
       className="
       flex
       items-center
