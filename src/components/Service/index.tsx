@@ -77,7 +77,7 @@ const Service: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className="lg:order-first md:w-0 lg:w-3/6 xl:w-2/5 3xl:w-2/6 mb-4 md:mb-0">
+        <div className="lg:order-first w-4/5 md:w-0 lg:w-3/6 xl:w-2/5 3xl:w-2/6 mb-4 md:mb-0">
           <img
             className="object-center w-full"
             src={require("../../assets/Programming-amico.png")}

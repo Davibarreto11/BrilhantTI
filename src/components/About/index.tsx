@@ -28,7 +28,7 @@ const About: React.FC = () => {
             3xl:text-7xl
             4xl:text-8xl"
         >
-            Tenha seu site online rápido, e com melhor qualidade.
+          Tenha seu site online rápido, e com melhor qualidade.
         </h1>
         <div className="mt-2 mb-4 2xl:mt-4 2xl:mb-4 3xl:mt-8 3xl:mb-10">
           <p className="font-light text-white text-lg md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl 4xl:text-[38px]">
@@ -36,7 +36,9 @@ const About: React.FC = () => {
           </p>
         </div>
         <div className="flex w-auto">
-          <Button label="Conheça-nos" />
+          <a href="#technologies">
+            <Button label="Conheça-nos" />
+          </a>
         </div>
       </div>
     </div>

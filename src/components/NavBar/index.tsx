@@ -65,7 +65,12 @@ const NavBar: React.FC = () => {
           >
             <li>
               <a
-                className="block py-2 text-white md:p-4 lg:text-xl 2xl:text-3xl 3xl:text-3xl"
+                className="transition 
+                ease-in-out 
+                delay-15 
+                hover:-translate-y-1 
+                hover:scale-110
+                duration-300 block py-2 text-white md:p-4 lg:text-xl 2xl:text-3xl 3xl:text-3xl"
                 href="#about"
               >
                 Empresa
@@ -73,7 +78,12 @@ const NavBar: React.FC = () => {
             </li>
             <li>
               <a
-                className="block py-2 text-white hover:text-red-400 md:p-4 lg:text-xl 2xl:text-3xl 3xl:text-3xl"
+                className="transition 
+                ease-in-out 
+                delay-15 
+                hover:-translate-y-1 
+                hover:scale-110
+                duration-300 block py-2 text-white md:p-4 lg:text-xl 2xl:text-3xl 3xl:text-3xl"
                 href="#technologies"
               >
                 Tecnologias
@@ -81,7 +91,12 @@ const NavBar: React.FC = () => {
             </li>
             <li>
               <a
-                className="block py-2 text-white md:p-4 lg:text-xl 2xl:text-3xl 3xl:text-3xl"
+                className="transition 
+                ease-in-out 
+                delay-15 
+                hover:-translate-y-1 
+                hover:scale-110
+                duration-300 block py-2 text-white md:p-4 lg:text-xl 2xl:text-3xl 3xl:text-3xl"
                 href="#services"
               >
                 Serviços
@@ -89,7 +104,12 @@ const NavBar: React.FC = () => {
             </li>
             <li>
               <a
-                className="block py-2 text-white font-bold md:p-4 lg:text-xl 2xl:text-3xl 3xl:text-3xl"
+                className="transition 
+                ease-in-out 
+                delay-15 
+                hover:-translate-y-1 
+                hover:scale-110
+                duration-300 block py-2 text-white font-bold md:p-4 lg:text-xl 2xl:text-3xl 3xl:text-3xl"
                 href="#contacts"
               >
                 Peça um orçamento

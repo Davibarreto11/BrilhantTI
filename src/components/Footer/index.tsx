@@ -10,7 +10,7 @@ import {
 const Footer: React.FC = () => {
   return (
     <div className="flex flex-col space-y-8">
-      <div className="flex flex-col md:flex-row justify-around items-center md:items-start mt-8 border-b-2 border-gray-700">
+      <div className="flex flex-col md:flex-row justify-around items-start mt-8 ml-32 sm:ml-60 md:ml-0">
         <div className="flex flex-col items-start">
           <img
             src={require("../../assets/logo.jpg")}
@@ -58,14 +58,14 @@ const Footer: React.FC = () => {
         </div>
         <div className="h-full space-y-4 mb-6">
           <span className="4xl:text-2xl text-white font-bold">
-            Contate-nos-
+            Contate-nos
           </span>
 
           <Button icon={FaPaperPlane} label="Enviar Mensagem" />
         </div>
       </div>
-      <div className="flex justify-around items-start">
-        <div className="flex items-center mb-8">
+      <div className="flex justify-around items-start border-t-2 border-gray-700">
+        <div className="flex items-center mb-8 mt-4">
           <a
             href=" https://wa.me/996488674"
             target="_blank"
@@ -109,8 +109,8 @@ const Footer: React.FC = () => {
             <FaInstagram size={25} color="white" />
           </a>
         </div>
-        <div>
-          <p className="text-xs 4xl:text-sm text-white font-bold">
+        <div className="mt-6">
+          <p className="text-base md:text-lg 4xl:text-lg text-white font-bold">
             @ 2024 BrilhanTI. Todos os direitos reservados.
           </p>
         </div>

@@ -4,12 +4,13 @@ import { IconBaseProps } from "react-icons";
 interface ButtonProps {
   label: string;
   icon?: React.ComponentType<IconBaseProps>;
+  sendEmail?: (e: any) => void;
 }
 
-const Button: React.FC<ButtonProps> = ({ label, icon: Icon }) => {
+const Button: React.FC<ButtonProps> = ({ label, icon: Icon, sendEmail }) => {
   return (
-    <a
-      href="mailto:laryssa.brilhante@hotmail.com"
+    <button
+      onClick={sendEmail}
       className="
       flex
       items-center
@@ -42,7 +43,7 @@ const Button: React.FC<ButtonProps> = ({ label, icon: Icon }) => {
     >
       {Icon && <Icon size={30} className="mr-4" />}
       <h1>{label}</h1>
-    </a>
+    </button>
   );
 };
 
