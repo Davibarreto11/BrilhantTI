@@ -70,7 +70,7 @@ const Contact: React.FC = () => {
             </p>
           </div>
           <div className="flex items-center mt-7">
-            <input       
+            <input
               className="ml-2 text-xl 3xl:text-xl bg-primaryPink p-4 pr-10 sm:pr-28 xl:pr-36 pl-14 rounded-xl opacity-75"
               value="+55 (88) 99648-8674"
             />
@@ -191,21 +191,21 @@ const Contact: React.FC = () => {
               <input
                 onChange={(e) => setName(e.target.value)}
                 value={name}
-                className="w-full outline-none pb-5 bg-primaryPink border-b-2 font-bold text-white 2xl:text-xl 3xl:text-2xl"
+                className="w-full outline-none pb-5 bg-primaryPink border-b-2 font-bold text-white 2xl:text-lg 3xl:text-xl"
                 type="text"
                 placeholder="Nome..."
               />
               <input
                 onChange={(e) => setEmail(e.target.value)}
                 value={email}
-                className="w-full outline-none pb-5 bg-primaryPink border-b-2 font-bold text-white 2xl:text-xl 3xl:text-2xl"
+                className="w-full outline-none pb-5 bg-primaryPink border-b-2 font-bold text-white 2xl:text-lg 3xl:text-xl"
                 type="text"
                 placeholder="Email..."
               />
               <input
                 onChange={(e) => setMessage(e.target.value)}
                 value={message}
-                className="w-full outline-none pb-12 text- bg-primaryPink border-b-2 font-bold text-white 2xl:text-xl 3xl:text-2xl"
+                className="w-full outline-none pb-12 text- bg-primaryPink border-b-2 font-bold text-white 2xl:text-lg 3xl:text-xl"
                 type="text"
                 placeholder="Mensagem..."
               />
