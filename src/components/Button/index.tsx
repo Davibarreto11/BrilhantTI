@@ -5,18 +5,24 @@ interface ButtonProps {
   label: string;
   icon?: React.ComponentType<IconBaseProps>;
   sendEmail?: (e: any) => void;
+  href?: string;
 }
 
-const Button: React.FC<ButtonProps> = ({ label, icon: Icon, sendEmail }) => {
+const Button: React.FC<ButtonProps> = ({
+  label,
+  icon: Icon,
+  sendEmail,
+  href,
+}) => {
   return (
-    <button
-      onClick={sendEmail}
-      className="
+    <a  href={href}>
+      <button
+        onClick={sendEmail}
+        className="
       flex
       items-center
       bg-primaryGray 
-      px-4 
-      py-2 
+      px-4 py-2 
       md:px-6 
       md:py-3 
       2xl:px-8 
@@ -40,10 +46,11 @@ const Button: React.FC<ButtonProps> = ({ label, icon: Icon, sendEmail }) => {
       hover:scale-110
       duration-300
       "
-    >
-      {Icon && <Icon size={30} className="mr-4" />}
-      <h1>{label}</h1>
-    </button>
+      >
+        {Icon && <Icon size={30} className="mr-4" />}
+        <h1>{label}</h1>
+      </button>
+    </a>
   );
 };
 

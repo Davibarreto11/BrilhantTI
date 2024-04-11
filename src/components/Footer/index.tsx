@@ -10,21 +10,29 @@ import {
 const Footer: React.FC = () => {
   return (
     <div className="flex flex-col space-y-8">
-      <div className="flex flex-col md:flex-row justify-around items-start mt-8 ml-32 sm:ml-60 md:ml-0">
-        <div className="flex flex-col items-start">
+      <div className="flex flex-col md:flex-row justify-around items-center mt-8">
+        <div className="flex flex-col items-center md:items-start">
           <img
             src={require("../../assets/logo.jpg")}
             alt="Logo tipo BrilhanTI"
             className="w-16 rounded-xl"
           />
-          <p className="2xl:text-base 3xl:text-xl 4xl:text-2xl text-white mt-2">
+          <a
+            className="2xl:text-base 3xl:text-xl 4xl:text-2xl text-white mt-2"
+            href="mailto:laryssa.brilhante@hotmail.com"
+          >
             laryssa.brilhante@hotmail.com
-          </p>
-          <p className="2xl:text-base 3xl:text-xl 4xl:text-2xl text-white mt-2">
-            +55 (88) 99648-8674
-          </p>
+          </a>
+          <a
+            className="2xl:text-base 3xl:text-xl 4xl:text-2xl text-white mt-2"
+            href="https://wa.me/5588996488674"
+            target="_blank"
+            rel="noreferrer"
+          >
+            (88) 99648-8674
+          </a>
         </div>
-        <div className="flex flex-col items-start">
+        <div className="flex flex-col items-center md:items-start">
           <span className="text-start 4xl:text-2xl text-white font-bold">
             Links Rápidos
           </span>
@@ -41,7 +49,7 @@ const Footer: React.FC = () => {
             Tecnologia
           </a>
         </div>
-        <div className="flex flex-col items-start">
+        <div className="flex flex-col items-center md:items-start">
           <span className="text-white">--------</span>
           <a
             href="#services"
@@ -56,18 +64,16 @@ const Footer: React.FC = () => {
             Contato
           </a>
         </div>
-        <div className="h-full space-y-4 mb-6">
-          <span className="4xl:text-2xl text-white font-bold">
-            Contate-nos
-          </span>
+        <div className="h-full flex flex-col md:items-start items-center space-y-4 mb-6">
+          <span className="4xl:text-2xl text-white font-bold">Contate-nos</span>
 
-          <Button icon={FaPaperPlane} label="Enviar Mensagem" />
+          <Button href="#contacts" icon={FaPaperPlane} label="Enviar Mensagem" />
         </div>
       </div>
-      <div className="flex justify-around items-start border-t-2 border-gray-700">
-        <div className="flex items-center mb-8 mt-4">
+      <div className="flex flex-col justify-around items-center md:flex-row border-t-2 border-gray-700">
+        <div className="flex items-center mb-4 mt-4">
           <a
-            href=" https://wa.me/996488674"
+            href="https://wa.me/5588996488674"
             target="_blank"
             rel="noreferrer"
             className="border border-1 rounded-3xl p-1 mr-2 lg:p-2 lg:mr-3 3xl:mr-4             
@@ -95,7 +101,7 @@ const Footer: React.FC = () => {
             <FaLinkedin size={25} color="white" />
           </a>
           <a
-            href="https://www.instagram.com/solilorys/"
+            href="https://www.instagram.com/solilorys"
             target="_blank"
             rel="noreferrer"
             className="border border-1 rounded-3xl p-1 mr-2 lg:p-2 lg:mr-3 3xl:mr-4  
@@ -109,7 +115,7 @@ const Footer: React.FC = () => {
             <FaInstagram size={25} color="white" />
           </a>
         </div>
-        <div className="mt-6">
+        <div className="mb-4 mt-4">
           <p className="text-base md:text-lg 4xl:text-lg text-white font-bold">
             @ 2024 BrilhanTI. Todos os direitos reservados.
           </p>

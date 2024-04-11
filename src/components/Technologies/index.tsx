@@ -1,33 +1,31 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 
 import TeamBro from "../../assets/Creative team-bro.png";
 import HandCondig from "../../assets/Hand coding-bro.png";
 import SuperHero from "../../assets/Superhero-cuate.png";
+import Typed from "typed.js";
 
 const Technologies: React.FC = () => {
+  const ref = useRef(null);
+
   const state = [
-    "seu blog",
-    "sua empresa",
-    "seu negócio",
-    "você",
-    "seu portifólio",
+    "seu blog.",
+    "sua empresa.",
+    "seu negócio.",
+    "você.",
+    "seu portifólio.",
   ];
 
-  const [index, setIndex] = useState(0);
-  const [name, setName] = useState(state[0]);
-
   useEffect(() => {
-    const blog = setInterval(() => {
-      // console.log(index)
-      setIndex((prevIndex) => (prevIndex + 1) % state.length);
-    }, 2000);
-
-    return () => clearInterval(blog);
-  }, [index, state.length]);
-
-  useEffect(() => {
-    setName(state[index])
-  }, [index, state])
+    const typed = new Typed(ref.current, {
+      strings: state,
+      typeSpeed: 50,
+      loop: true,
+    });
+    return () => {
+      typed.destroy();
+    };
+  }, [state, ref]);
 
   return (
     <div className="w-full flex flex-col justify-evenly items-center">
@@ -50,10 +48,11 @@ const Technologies: React.FC = () => {
             Tecnologias
           </h2>
           <p className="w-3/3 mt-4 text-lg md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl 4xl:text-[38px]">
-            Somos especialistas em desenvolvimentos de sites para <span className="text-primaryPink font-bold">{name}</span>.
+            Somos especialistas em desenvolvimento de sites para{" "}
+            <span className="text-primaryPink font-bold" ref={ref} />
           </p>
           <p className="w-3/3 mt-2 text-lg md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl 4xl:text-[38px]">
-            Entrega rápido e com a melhor qualidade.
+            Entrega rápida e com a melhor qualidade.
           </p>
         </div>
       </div>
@@ -66,7 +65,7 @@ const Technologies: React.FC = () => {
               className="w-full h-full object-center object-cover group-hover:opacity-75"
             />
           </div>
-          <h3 className="mt-4 text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-xl 2xl:text-4xl 4xl:text-4xl font-medium text-gray-700">
+          <h3 className="mt-4 text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-xl 2xl:text-4xl 4xl:text-4xl font-bold text-gray-700">
             Agilidade
           </h3>
           <p className="mt-2 lg:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl">
@@ -83,12 +82,12 @@ const Technologies: React.FC = () => {
               className="w-full h-full object-center object-cover group-hover:opacity-75"
             />
           </div>
-          <h3 className="mt-4 text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl 4xl:text-4xl font-medium text-gray-700">
+          <h3 className="mt-4 text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-3xl 2xl:text-4xl 4xl:text-4xl font-bold text-gray-700">
             Qualidade
           </h3>
           <p className="mt-2 lg:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl">
             A melhor qualidade e desempenho juntos em um site feito para você,
-            no seu estilo
+            no seu estilo.
           </p>
         </div>
 
@@ -100,12 +99,12 @@ const Technologies: React.FC = () => {
               className="w-full object-center object-cover group-hover:opacity-75"
             />
           </div>
-          <h3 className="mt-4 text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-xl 2xl:text-4xl 4xl:text-4xl font-medium text-gray-700">
+          <h3 className="mt-4 text-xl sm:text-xl md:text-2xl lg:text-3xl xl:text-xl 2xl:text-4xl 4xl:text-4xl font-bold text-gray-700">
             Criatividade
           </h3>
           <p className="mt-2 mb-6 lg:text-lg 2xl:text-xl 3xl:text-2xl 4xl:text-3xl">
-            Sites criativos com melhores tecnicas de design para fazer você
-            decolar sua empresa.
+            Sites criativos com melhores técnicas de design para fazer você
+            seu projeto decolar.
           </p>
         </div>
       </div>

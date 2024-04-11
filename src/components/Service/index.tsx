@@ -25,7 +25,7 @@ const Service: React.FC = () => {
             Serviços
           </h2>
           <p className="w-full md:w-3/3 text-white mt-4 text-[16px] md:text-lg lg:text-xl xl:text-2xl 2xl:text-3xl 4xl:text-[38px]">
-            Desenvolvimento inovador com design excepcional gestão profissional.
+            Desenvolvimento inovador com design excepcional e gestão profissional.
           </p>
           <p className="md:w-3/3 text-white mt-2 text-[18.5px] md:text-xl lg:text-xl xl:text-2xl 2xl:text-3xl 4xl:text-[38px]">
             Transformamos ideias em realidade.
@@ -44,7 +44,7 @@ const Service: React.FC = () => {
               </h3>
               <p className="text-white lg:text-[10px] xl:text-sm 2xl:text-base 3xl:text-base 4xl:text-xl">
                 Construindo a sua presença digital, uma linha de código de cada
-                vez
+                vez.
               </p>
             </div>
           </div>
@@ -71,7 +71,7 @@ const Service: React.FC = () => {
                   Design feito para você
                 </h3>
                 <p className="text-white lg:text-[10px] xl:text-sm 2xl:text-base 3xl:text-base 4xl:text-xl">
-                  Transformando ideias em experiências visuais extraordinárias
+                  Transformando ideias em experiências visuais extraordinárias.
                 </p>
               </div>
             </div>

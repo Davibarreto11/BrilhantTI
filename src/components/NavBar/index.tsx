@@ -8,7 +8,7 @@ const NavBar: React.FC = () => {
     : "w-full md:flex md:items-center md:w-auto";
 
   return (
-    <header>
+    <header className="fixed w-full bg-primaryPurple opacity-80">
       <nav
         className={`
         lg:ml-auto
@@ -19,7 +19,6 @@ const NavBar: React.FC = () => {
         flex-wrap
         items-center
         justify-between
-        bg-primaryPurple
         p-4
         md:py-0
         lg:px-8
